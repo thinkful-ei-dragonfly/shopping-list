@@ -7,7 +7,6 @@ function shoppingList() {
 }
 
 function checkItem() {
-  console.log("called function");
   $('.shopping-list').on('click', '.shopping-item-toggle',function(e) {
   // Will this code work as well?
   //  $(e.target).parent().siblings('.shopping-item').toggleClass('shopping-item__checked');
