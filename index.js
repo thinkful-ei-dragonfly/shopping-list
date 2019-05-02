@@ -7,7 +7,7 @@ function shoppingList() {
 }
 
 function checkItem() {
-  $('.shopping-list').on('click', '.shopping-item-toggle',function(e) {
+  $('.shopping-list').on('click', '.shopping-item-toggle',function() {
   // Will this code work as well?
   //  $(e.target).parent().siblings('.shopping-item').toggleClass('shopping-item__checked');
     $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
@@ -15,7 +15,7 @@ function checkItem() {
 }
 
 function removeItem(){
-  $('.shopping-list').on('click', '.shopping-item-delete',function(e) {
+  $('.shopping-list').on('click', '.shopping-item-delete',function() {
     $(this).closest('li').remove();
   });
 }
